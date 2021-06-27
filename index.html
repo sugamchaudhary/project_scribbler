@@ -1,13 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    </head>
+    <body>
 
-<head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
-</head>
+        <!--The header starts-->
 
-<body>
-    <!-- TODO: Include all your code for the header and home page here -->
-</body>
+        <header id="heading">
+            <h1 id="heading1">ScriBBler</h1>
+            <p id="heading2">Explore, Imagine, Create</p>
 
+            <!--Sign Up button-->
+
+            <button onclick="document.getElementById('id01').style.display='block'" id="button2">Sign Up</button>
+
+            <div id="id01" class="modal">
+                
+                <form class="modal-content">
+                    <div>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                        <p class="getstart">Get Started</p>
+                        <hr>
+                    </div>
+                    <div class="form_container">
+                        <label class="l">Full Name</label>
+                        <br>
+                        <input type="text" placeholder="  Enter Full Name" required>
+                        <br>
+
+                        <label class="l">Username</label>
+                        <br>
+                        <input type="text" placeholder="  Enter Username" required>
+                        <br>
+
+                        <label class="l">Password</label>
+                        <br>
+                        <input type="password" placeholder="  Enter Password" required>
+                        <br>
+
+                        <label class="l">Confirm Password</label>
+                        <br>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <br>
+                    </div>
+                    <div>
+                        <button class="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+            <!--Sign In button-->
+            <button onclick="document.getElementById('id02').style.display='block'" class="button1">Sign In</button>
+            
+
+            <div id="id02" class="modal">
+                <form class="modal-content">
+                    <div>
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+                        <p class="getstart">Welcome Back!</p>
+                        <hr width="90%">
+                    </div>
+                    <div class="form_container">
+                        <label class="l">Username</label>
+                        <br>
+                        <input type="text" placeholder="  Enter Username" required>
+                        <br>
+
+                        <label class="l">Password</label>
+                        <br>
+                        <input type="password" placeholder="  Enter Password" required>
+                        <br>
+                    </div>
+                    <div>
+                        <button class="submit">Sign In</button>
+                        <p class="member">Not a member?<span onclick="document.getElementById('id02').style.display='none',document.getElementById('id01').style.display='block'"><span class="link"> Sign Up</span></span></p>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!--Header ends-->
+
+        <!--All posts button-->
+
+        <div class="middles">
+            <button class="buttons"><a href="./html/postslist.html"><span class="dab" >All Posts</span></a></button>
+
+            <!--Create Post button-->
+            
+            <button onclick="document.getElementById('id03').style.display='block'" class="buttons" id="create">Create Post</button>
+
+            <div id="id03" class="modal">
+                <form class="modal-content1">
+                    <div>
+                        <span onclick="document.getElementById('id03').style.display='none'" class="closees">&times;</span>
+                        <p class="get">Pen Your Post</p>
+                    </div>
+                    <div class="form_container">
+                        <label class="la1" style="left: 1000%;">Title:</label>
+                        <br>
+                        <input class="post" type="text">
+                        <br>
+
+                        <label class="la1">Content:</label>
+                        <br>
+                        <textarea class="textbox1"name="mytextarea"></textarea>
+                        <br>
+                    </div>
+                    <div>
+                        <button class="but">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./scripts/header.js" async defer></script>
+    </body>
 </html>
