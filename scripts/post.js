@@ -39,6 +39,7 @@ function thu(){
     n.style.wordBreak="break-word";
     var textnode = document.createTextNode(comment);
     n.appendChild(textnode);
+    document.getElementById("c_content").value = "";
     if (comment===""){
         alert("No comment added......");
     }
