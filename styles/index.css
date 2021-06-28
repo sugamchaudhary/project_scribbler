@@ -12,6 +12,7 @@
   display:inline-block;
   font-weight : bold;
   border-color: white;
+  cursor: pointer;
 }
 
 #create{
@@ -88,6 +89,7 @@ cursor: pointer;
  margin-bottom: 3%;
  margin-left: 4%;
  padding: 1%;
+ cursor: pointer;
 }
 
 .la1{
